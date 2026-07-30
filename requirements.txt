@@ -9,7 +9,7 @@ seaborn==0.13.2
 wordcloud==1.9.6
 
 nltk==3.10.0
-
+openpyxl==3.1.5
 
 chromadb==1.5.9
 sentence-transformers==5.6.1
