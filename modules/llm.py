@@ -79,7 +79,9 @@ class LLM:
         try:
 
             # Prevent huge prompts
-            prompt = prompt[:30000]
+            MAX_CHARS = 8000
+            if len(prompt) > MAX_CHARS:
+                prompt = prompt[:MAX_CHARS]
 
             retries = 3
 
