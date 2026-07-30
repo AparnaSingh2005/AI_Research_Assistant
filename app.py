@@ -25,21 +25,21 @@ import io
 
 
 import nltk
-
 from nltk.corpus import stopwords
-
 from nltk.tokenize import word_tokenize
-import nltk
 
-try:
-    nltk.data.find("tokenizers/punkt")
-except LookupError:
-    nltk.download("punkt")
+# Download required NLTK resources only if they are missing
+resources = {
+    "tokenizers/punkt": "punkt",
+    "tokenizers/punkt_tab": "punkt_tab",  # Required for newer NLTK versions
+    "corpora/stopwords": "stopwords",
+}
 
-try:
-    nltk.data.find("corpora/stopwords")
-except LookupError:
-    nltk.download("stopwords")
+for resource_path, package_name in resources.items():
+    try:
+        nltk.data.find(resource_path)
+    except LookupError:
+        nltk.download(package_name)
 
 # -------------------------------
 # PAGE CONFIG
