@@ -25,7 +25,15 @@ import time
 from dotenv import load_dotenv
 from groq import Groq
 
+import streamlit as st
+from dotenv import load_dotenv
+
 load_dotenv()
+
+api_key = (
+    st.secrets.get("GROQ_API_KEY")
+    or os.getenv("GROQ_API_KEY")
+)
 
 
 class LLM:
