@@ -126,7 +126,7 @@ AI_Research_Assistant/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/AI_Research_Assistant.git
+git clone https://github.com/AparnaSingh2005/AI_Research_Assistant.git
 
 cd AI_Research_Assistant
 ```
