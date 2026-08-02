@@ -11,11 +11,9 @@ wordcloud==1.9.6
 nltk==3.10.0
 openpyxl==3.1.5
 
+chromadb==1.0.15
 
-chromadb==0.5.23
 sentence-transformers==5.6.1
-torch
-transformers
 
 groq==1.6.0
 python-dotenv==1.2.2
